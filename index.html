@@ -174,12 +174,53 @@
             </div>
         </div>
 
+        <section class="process">
+    <div class="process__container">
+        <h2 class="process__title">Así hacemos realidad tu evento</h2>
+        <p class="process__subtitle">Te acompañamos en cada paso para que vivas una experiencia sin preocupaciones</p>
+
+        <div class="process__steps">
+
+            <div class="step">
+                <div class="step__number">1</div>
+                <h3>Nos contás tu idea</h3>
+                <p>Escuchamos lo que imaginás y lo transformamos en una propuesta concreta.</p>
+            </div>
+
+            <div class="step">
+                <div class="step__number">2</div>
+                <h3>Diseñamos tu propuesta</h3>
+                <p>Definimos estilo, colores y cada detalle visual del evento.</p>
+            </div>
+
+            <div class="step">
+                <div class="step__number">3</div>
+                <h3>Planificamos cada detalle</h3>
+                <p>Organizamos todo para que el día del evento sea perfecto.</p>
+            </div>
+
+            <div class="step">
+                <div class="step__number">4</div>
+                <h3>Montamos el evento</h3>
+                <p>Nos encargamos de toda la ambientación y armado del espacio.</p>
+            </div>
+
+            <div class="step">
+                <div class="step__number">5</div>
+                <h3>Vivís la experiencia</h3>
+                <p>Solo disfrutás. Nosotros nos ocupamos del resto.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
       
         <!--Contactenos-->
 
         
 
-     <div class="container__contact div__offset" id="contacto">
+     <!--<div class="container__contact div__offset" id="contacto">
 
     <div class="location__maps">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26254.826966795463!2d-58.63871785912868!3d-34.65840581685705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc76f57e3be01%3A0xa488fcdcec5b600f!2sB1708%20Mor%C3%B3n%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1776974965563!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -209,7 +250,7 @@
             <input type="submit" class="btn__text" value="Enviar Mensaje">
 
             <!-- mantenemos esto para no romper nada -->
-            <input type="hidden" name="_next" value="https://www.amambientaciones.com/">
+            <!--<input type="hidden" name="_next" value="https://www.amambientaciones.com/">
             <input type="hidden" name="_captcha" value="false">
 
         </form>
@@ -248,9 +289,35 @@ document.getElementById("formulario_contacto_2").addEventListener("submit", func
 
     window.open(url, "_blank");
 });
-</script>
+</script>-->
 
-        
+<section class="cta-strong reveal">
+    <div class="cta-strong__content">
+        <h2>Tu evento empieza con una idea</h2>
+        <h3>Nosotros lo convertimos en algo inolvidable</h3>
+
+        <a href="https://wa.me/5491140289421" target="_blank" class="cta-strong__btn pulse">
+            <i class="fa-brands fa-whatsapp"></i> Hablemos por WhatsApp
+        </a>
+    </div>
+</section>
+
+<!-- SCRIPT FADE-IN -->
+<script>
+const reveals = document.querySelectorAll('.reveal');
+
+window.addEventListener('scroll', () => {
+    const triggerBottom = window.innerHeight * 0.85;
+
+    reveals.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+
+        if (top < triggerBottom) {
+            el.classList.add('active');
+        }
+    });
+});
+</script>
 
     </main>
 
